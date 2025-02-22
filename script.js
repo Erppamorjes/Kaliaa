@@ -82,7 +82,7 @@ function update() {
 
     // Decrease alcohol level over time (faster decline)
     alcoholLevel -= 0.5 / 60; // Decline 0.5 per second
-    if (alcoholLevel <= 1) gameOver("Mikko Sober – Mikko’s Drunken Voyage Over!");
+    if (alcoholLevel <= 1) gameOver("Mikko Sober – Joka päivä jotakin");
 
     // Spawn items randomly
     if (Math.random() < 0.01) { // 1% chance per frame
@@ -108,7 +108,7 @@ function update() {
             mikko.y < item.y + 25 && mikko.y + mikko.height > item.y) {
             if (item.type === 'water') {
                 waterSound.play(); // Play water sound
-                gameOver("LOPETA! Vesi pilaa Mikko’s Drunken Voyage!");
+                gameOver("LOPETA! Vesi pilaa hyvän kännin!");
             } else {
                 if (item.type === 'beer') beerSound.play(); // Play beer sound
                 if (item.type === 'amarone') amaroneSound.play(); // Play Amarone sound
