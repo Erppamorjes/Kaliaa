@@ -82,7 +82,7 @@ function update() {
 
     // Decrease alcohol level over time (faster decline)
     alcoholLevel -= 0.5 / 60; // Decline 0.5 per second
-    if (alcoholLevel <= 1) gameOver("Mikko Sober – Joka päivä jotakin");
+    if (alcoholLevel <= 1) gameOver("Liian selvänä – pää kuivuu");
 
     // Spawn items randomly
     if (Math.random() < 0.01) { // 1% chance per frame
