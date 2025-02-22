@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#gameCanvas {
+    border: 1px solid white;
+}
+
+#ui {
+    margin-top: 10px;
+    font-size: 18px;
+}
